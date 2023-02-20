@@ -803,7 +803,7 @@ circle:hover {
   top: 0;
   right: 0;
   background-color: #ffe;
-  overflow-x: hidden;
+  overflow-x: visible;
   transition: 0.5s;
   display: none;
   flex-direction: column;
