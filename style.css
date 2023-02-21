@@ -803,7 +803,7 @@ circle:hover {
   top: 0;
   right: 0;
   background-color: #ffe;
-  overflow-x: visible;
+  overflow-x: scroll;
   transition: 0.5s;
   display: none;
   flex-direction: column;
@@ -820,8 +820,7 @@ circle:hover {
   cursor: pointer;
 }
 .overlay-quick-view .single-img {
-  display: flex;
-  flex-direction: row;
+  display: block;
   width: 60%;
   position: relative;
   left: 20%;
