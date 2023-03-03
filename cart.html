@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link 
+    rel="stylesheet" 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link 
+    rel="stylesheet" 
+    href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    >
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/slick.css">
+    <link rel="stylesheet" href="assets/slick-theme.css">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/style-pages.css">
+    <title>My Cart | Parachute</title>
+</head>
+<body>
+  
+  <div class="overlay-quick-view">
+    <i class="bi bi-x-circle" id="close-quickView"></i>
+    <div class="single-img single-item m-1 p-2">
+      <div class="single-img-con">
+        <img src="assets/imgs/quick-view/birch-sham-set_cream_lightbox_0083.jpg" alt="">
+      </div>
+      <div class="single-img-con">
+        <img src="assets/imgs/quick-view/birch-sham-set_cream_detail_15918.jpg" alt="">
+      </div>
+      <div class="single-img-con">
+        <img src="assets/imgs/quick-view/birch-sham-set_cream_studio_1846.jpg" alt="">
+      </div>
+    </div>
+    <div class="text-quick-view">
+      <h2 class="text-dark text-start text-capitalize fw-bold">
+        brich sham set
+      </h2>
+      <p class="lead">
+        $89 - $99
+        <br>
+        Lorem ipsum dolor sit amet.
+        <a href="" class="text-muted">learn more</a>
+      </p>
+      <p class="text-dark text-capitalize">size: <span class="text-muted">choose one</span></p>
+      <div class="btns-quick-ivew-size">
+        <button class="btn btn-light">standard</button>
+        <button class="btn btn-light">king</button>
+
+      </div>
+      <p class="text-muted text-capitalize d-flex flex-row w-100 align-items-center">
+        <i class="fa fa-ruler-horizontal"></i> 
+        size guide
+      </p>
+
+      <ul class="list-unstyled list-colors">
+        <li class="color-name">color: wihte</li>
+        <li class="color">
+          <button class="thems active" role="button">
+            <svg viewBox="0 0 250 250" height="45px" width="45px">
+              <circle cy="125" cx="125" r="100" stroke="#000" stroke-width="10" fill="#fff"></circle>
+            </svg>
+          </button>
+          <button class="thems" role="button">
+            <svg viewBox="0 0 250 250" height="45px" width="45px">
+              <circle cy="125" cx="125" r="100" stroke="#000" stroke-width="10" fill="#0aa"></circle>
+            </svg>
+          </button>
+          <button class="thems" role="button">
+            <svg viewBox="0 0 250 250" height="45px" width="45px">
+              <circle cy="125" cx="125" r="100" stroke="#000" stroke-width="10" fill="#888"></circle>
+            </svg>
+          </button>
+          <button class="thems" role="button">
+            <svg viewBox="0 0 250 250" height="45px" width="45px">
+              <circle cy="125" cx="125" r="100" stroke="#000" stroke-width="10" fill="#ec1"></circle>
+            </svg>
+          </button>
+        </li>
+      </ul>
+      <button type="button" class="btn btn-secondary text-uppercase btn-addToCart">
+        add to cart
+      </button>
+      <h6 class="py-4 pb-0">
+        <a href="" class="text-dark text-capitalize">view full details</a>
+      </h6>
+    </div>
+  </div>
+    
+  <div class="overlay-ser" id="myNav">
+    <div class="container">
+      <div class="col">
+        <div class="row">
+          <div class="w-100 d-flex justify-content-between p-5 form-control align-items-center">
+            <form action="active" class="">
+              <i class="bi bi-search"></i>
+              <input type="search" class="" placeholder="search">
+            </form>
+            <button class="btn btn-close" onclick="closeNav()">
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+      
+  <!-- Navbar -->
+  
+  <nav id="site-header" class="navbar fixed-top p-0 m-0 w-100" role="banner">
+    <div class="container-fluid w-100 p-0 m-0">
+      <div class="col p-0 m-0 w-100">
+        <div class="row w-100 m-0 p-0 fir-header px-4">
+          <div class="col p-0 m-0">
+            <h6 class="small text-muted fw-bold text-lg-start text-center p-0 m-0 align-items-center">
+              FREE CARBON NEUTRAL SHIPPING | 60 DAY RETURNS | 100 DAY MATTRESS TRIAL
+            </h6>
+          </div>
+          <div class="col ms-auto d-none d-lg-inline-block text-end p-0 m-0">
+            <div class="d-flex justify-content-end nav-links">
+              <a class="nav-link" href="#">About Us</a>
+              <a class="nav-link" href="#">Sustainability</a>
+              <a class="nav-link" href="#">Trade</a>
+              <a class="nav-link" href="#">Design Services</a>
+              <a class="nav-link" href="#">Stores</a>
+              <a class="nav-link" href="#">Blog</a>
+              <div class="d-flex justify-content-between g-4">
+                <a href="" class="nav-link round-img rounded-circle">
+                  <img src="assets/US.svg" alt="" class="img-fluid">
+                </a>
+                US
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row w-100 p-0 m-0">
+          <nav class="navbar navbar-expand-lg px-4 bg-white w-100 py-0 sec-header">
+            <div class="container-fluid p-0 m-0 w-100 thr-header">
+              <button 
+              class="navbar-toggler m-2" 
+              type="button" 
+              data-bs-toggle="offcanvas" 
+              data-bs-target="#menu" 
+              aria-controls="menu" 
+              aria-label="menu"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <a 
+              class="navbar-brand text-uppercase fw-bold" 
+              href="index.html"
+              >
+                parachute
+              </a>
+              <div 
+              class="offcanvas offcanvas-start text-start" 
+              tabindex="-1" 
+              id="menu" 
+              aria-labelledby="menuLabel"
+              >
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="menuLabel">
+                    <form class="d-flex" role="search">
+                      <i class="bi bi-search p-1"></i>
+                      <input 
+                      class="form-control me-1" 
+                      type="search" 
+                      placeholder="Search" 
+                      aria-label="Search"
+                      >
+                      </form>
+                  </h5>
+                  <button 
+                  type="button" 
+                  class="btn-close" 
+                  data-bs-dismiss="offcanvas" 
+                  aria-label="Close"
+                  >
+                  </button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav m-auto d-flex justify-content-between align-items-start align-items-lg-center mb-0 pb-0 text-capitalize">
+                    <li class="nav-item mb-0 pb-0">
+                        <a 
+                        href="#bedding"
+                        type="button" 
+                        class="btn nav-btn text-capitalize" 
+                        data-bs-toggle="dropdown" 
+                        data-bs-target="bedding"
+                        aria-expanded="false" 
+                        data-bs-auto-close="outside"
+                        >
+                          Bedding
+                        </a>
+                        <div 
+                        class="dropdown-menu m-0 border-0 bg-white h-auto px-5 py-0 w-100" 
+                        id="bedding"
+                        >
+                          <div class="row w-100 d-flex align-items-baseline justify-content-between">
+                            <div class="col-lg-auto me-auto py-3 ps-1 bor-nav-list">
+                              <ul class="list-unstyled nav-list">
+                                <li class="list-unstyled">
+                                  <h6 class="text-uppercase p-2 ps-0">FEATURED BEDDING</h6>
+                                  <ul class="list-unstyled list-group p-2 ps-0 me-5 border-0 fst-italic">
+                                    <li class="list-group-item p-2 ps-0 text-capitalize border-0"><a class="nav-link" href="">New Arrivals</a></li>
+                                    <li class="list-group-item p-2 ps-0 text-capitalize border-0"><a class="nav-link" href="">most popular</a></li>
+                                    <li class="list-group-item p-2 ps-0 text-capitalize border-0"><a class="nav-link" href="">bundle savings</a></li>
+                                    <li class="list-group-item p-2 ps-0 text-capitalize border-0"><a class="nav-link" href="./shop.html">all bedding</a></li>
+                                  </ul>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="col-lg-auto me-auto py-3 ps-1 bor-nav-list">
+                              <ul class="list-unstyled nav-list">
+                                <li class="list-unstyled">
+                                  <h6 class="text-uppercase p-2 ps-0">sheeting + top of bed</h6>
+                                  <ul class="list-unstyled list-group p-2 ps-0 me-5 border-0 fst-italic">
+                                    <li class="list-group-item p-2 ps-0 text-capitalize border-0"><a class="nav-link" href="">Sheets</a></li>
+                                    <li class="list-group-item p-2 ps-0 text-capitalize border-0"><a class="nav-link" href="">pillowcases + shams</a></li>
+                                    <li class="list-group-item p-2 ps-0 text-capitalize border-0"><a class="nav-link" href="">fitted Sheets</a></li>
+                                    <li class="list-group-item p-2 ps-0 text-capitalize border-0"><a class="nav-link" href="">top Sheets</a></li>
+                                    <li class="list-group-item p-2 ps-0 text-capitalize border-0"><a class="nav-link" href="">duvet covers</a></li>
+                                    <li class="list-group-item p-2 ps-0 text-capitalize border-0"><a class="nav-link" href="">quilts + blankets</a></li>
+                                    <li class="list-group-item p-2 ps-0 text-capitalize border-0"><a class="nav-link" href="">bedding swaches</a></li>
+                                  </ul>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="col-lg-auto m-auto mt-0 py-3 ps-1 bor-nav-list">
+                              <ul class="list-unstyled nav-list">
+                                <li class="list-unstyled">
+                                  <h6 class="text-uppercase p-2 ps-0">ABOUT OUR MATERIALS</h6>
+                                  <ul class="list-unstyled list-group p-2 ps-0 me-5 border-0 fst-italic">
+                                    <li class="list-group-item p-2 ps-0 text-capitalize border-0"><a class="nav-link" href="">organic cotton</a></li>
+                                    <li class="list-group-item p-2 ps-0 text-capitalize border-0"><a class="nav-link" href="">Percale</a></li>
+                                    <li class="list-group-item p-2 ps-0 text-capitalize border-0"><a class="nav-link" href="">linen</a></li>
+                                    <li class="list-group-item p-2 ps-0 text-capitalize border-0"><a class="nav-link" href="">brushed cotton</a></li>
+                                    <li class="list-group-item p-2 ps-0 text-capitalize border-0"><a class="nav-link" href="">sateen</a></li>
+                                    <li class="list-group-item p-2 ps-0 text-capitalize border-0"><a class="nav-link" href="">organic cloud cotton</a></li>
+                                  </ul>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="col-lg-4 m-auto py-3">
+                              <img 
+                              src="assets/imgs/navbar/221102_ParachuteHome_2023_Q1_3524.jpg" 
+                              alt="" 
+                              class="img-fluid">
+                              <a href="#" class="text-decoration-none text-black">
+                                <figure class="text-start">
+                                  <blockquote class="blockquote">
+                                    <p>A well-known quote, contained in a blockquote element.</p>
+                                  </blockquote>
+                                  <figcaption class="blockquote-footer">
+                                    Someone famous in 
+                                    <cite title="Source Title">
+                                      Source Title
+                                    </cite>
+                                  </figcaption>
+                                </figure>
+                              </a>
+                            </div>
+                          </div>                         
+                        </div>
+                    </li>
+                    <li class="nav-item mb-0 pb-0">
+                        <a 
+                        href="#insert"
+                        type="button" 
+                        class="btn nav-btn text-capitalize" 
+                        data-bs-toggle="dropdown" 
+                        data-bs-target="insert"
+                        aria-expanded="false" 
+                        data-bs-auto-close="outside"
+                        >
+                          Inserts
+                        </a>
+                        <div 
+                        class="dropdown-menu m-0 border-0 bg-white h-auto px-5 py-0 w-100" 
+                        id="insert"
+                        >
+                        <div class="row w-100 d-flex align-items-baseline justify-content-between">
+                          <div class="col-lg-auto m-auto mt-0 py-3 ps-1 bor-nav-list">
+                              <ul class="list-unstyled nav-list">
+                                <li class="list-unstyled">
+                                  <h6 class="text-uppercase p-2 ps-0">sheeting + top of bed</h6>
+                                  <ul class="list-unstyled list-group p-2 ps-0 me-5 border-0 fst-italic">
+                                    <li class="list-group-item p-2 ps-0 text-capitalize border-0"><a class="nav-link" href="">Sheets</a></li>
+                                    <li class="list-group-item p-2 ps-0 text-capitalize border-0"><a class="nav-link" href="">pillowcases + shams</a></li>
+                                    <li class="list-group-item p-2 ps-0 text-capitalize border-0"><a class="nav-link" href="">fitted Sheets</a></li>
+                                    <li class="list-group-item p-2 ps-0 text-capitalize border-0"><a class="nav-link" href="">top Sheets</a></li>
+                                    <li class="list-group-item p-2 ps-0 text-capitalize border-0"><a class="nav-link" href="">duvet covers</a></li>
+                                    <li class="list-group-item p-2 ps-0 text-capitalize border-0"><a class="nav-link" href="">quilts + blankets</a></li>
+                                    <li class="list-group-item p-2 ps-0 text-capitalize border-0"><a class="nav-link" href="">bedding swaches</a></li>
+                                  </ul>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="col-lg-4 m-auto py-3">
+                              <img 
+                              src="assets/imgs/navbar/221102_ParachuteHome_2023_Q1_4893_nav_header.jpg" 
+                              alt="" 
+                              class="img-fluid">
+                              <a href="#" class="text-decoration-none text-black">
+                                <figure class="text-start">
+                                  <blockquote class="blockquote">
+                                    <p>A well-known quote, contained in a blockquote element.</p>
+                                  </blockquote>
+                                  <figcaption class="blockquote-footer">
+                                    Someone famous in 
+                                    <cite title="Source Title">
+                                      Source Title
+                                    </cite>
+                                  </figcaption>
+                                </figure>
+                              </a>
+                            </div>
+                          </div>                         
+                        </div>
+                    </li>
+                    <li class="nav-item mb-0 pb-0">
+                      <a 
+                      href="#bath"
+                      type="button" 
+                      class="btn nav-btn text-capitalize" 
+                      data-bs-toggle="dropdown" 
+                      data-bs-target="bath"
+                      aria-expanded="false" 
+                      data-bs-auto-close="outside"
+                      >
+                        bath
+                      </a>
+                      <div 
+                      class="dropdown-menu m-0 border-0 bg-white h-auto px-5 py-0 w-100" 
+                      id="bath"
+                      >
+                        <div class="row w-100 d-flex align-items-baseline justify-content-between">
+                          <div class="col-lg-auto m-auto mt-0 py-3 ps-1 bor-nav-list">
+                              <ul class="list-unstyled nav-list">
+                                <li class="list-unstyled">
+                                  <h6 class="text-uppercase p-2 ps-0">sheeting + top of bed</h6>
+                                  <ul class="list-unstyled list-group p-2 ps-0 me-5 border-0 fst-italic">
+                                    <li class="list-group-item p-2 ps-0 text-capitalize border-0"><a class="nav-link" href="">Sheets</a></li>
+                                    <li class="list-group-item p-2 ps-0 text-capitalize border-0"><a class="nav-link" href="">pillowcases + shams</a></li>
+                                    <li class="list-group-item p-2 ps-0 text-capitalize border-0"><a class="nav-link" href="">fitted Sheets</a></li>
+                                    <li class="list-group-item p-2 ps-0 text-capitalize border-0"><a class="nav-link" href="">top Sheets</a></li>
+                                    <li class="list-group-item p-2 ps-0 text-capitalize border-0"><a class="nav-link" href="">duvet covers</a></li>
+                                    <li class="list-group-item p-2 ps-0 text-capitalize border-0"><a class="nav-link" href="">quilts + blankets</a></li>
+                                    <li class="list-group-item p-2 ps-0 text-capitalize border-0"><a class="nav-link" href="">bedding swaches</a></li>
+                                  </ul>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="col-lg-4 m-auto py-3">
+                            <img 
+                            src="assets/imgs/navbar/221102_ParachuteHome_2023_Q1_5098.jpg" 
+                            alt="" 
+                            class="img-fluid">
+                            <a href="#" class="text-decoration-none text-black">
+                              <figure class="text-start">
+                                <blockquote class="blockquote">
+                                  <p>A well-known quote, contained in a blockquote element.</p>
+                                </blockquote>
+                                <figcaption class="blockquote-footer">
+                                  Someone famous in 
+                                  <cite title="Source Title">
+                                    Source Title
+                                  </cite>
+                                </figcaption>
+                              </figure>
+                            </a>
+                          </div>
+                        </div>                         
+                      </div>
+                    </li>
+                    <li class="nav-item mb-0 pb-0">
+                      <a 
+                      href="#robes"
+                      type="button" 
+                      class="btn nav-btn" 
+                      data-bs-toggle="dropdown" 
+                      data-bs-target="robes"
+                      aria-expanded="false" 
+                      data-bs-auto-close="outside"
+                      >
+                      robes + Slippers
+                      </a>
+                      <div 
+                      class="dropdown-menu m-0 border-0 bg-white h-auto px-5 py-0 w-100" 
+                      id="robes"
+                      >
+                        <div class="row w-100 d-flex align-items-baseline justify-content-between">
+                          <div class="col-lg-auto m-auto mt-0 py-3 ps-1 bor-nav-list">
+                              <ul class="list-unstyled nav-list">
+                                <li class="list-unstyled">
+                                  <h6 class="text-uppercase p-2 ps-0">sheeting + top of bed</h6>
+                                  <ul class="list-unstyled list-group p-2 ps-0 me-5 border-0 fst-italic">
+                                    <li class="list-group-item p-2 ps-0 text-capitalize border-0"><a class="nav-link" href="">Sheets</a></li>
+                                    <li class="list-group-item p-2 ps-0 text-capitalize border-0"><a class="nav-link" href="">pillowcases + shams</a></li>
+                                    <li class="list-group-item p-2 ps-0 text-capitalize border-0"><a class="nav-link" href="">fitted Sheets</a></li>
+                                    <li class="list-group-item p-2 ps-0 text-capitalize border-0"><a class="nav-link" href="">top Sheets</a></li>
+                                    <li class="list-group-item p-2 ps-0 text-capitalize border-0"><a class="nav-link" href="">duvet covers</a></li>
+                                    <li class="list-group-item p-2 ps-0 text-capitalize border-0"><a class="nav-link" href="">quilts + blankets</a></li>
+                                    <li class="list-group-item p-2 ps-0 text-capitalize border-0"><a class="nav-link" href="">bedding swaches</a></li>
+                                  </ul>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="col-lg-4 m-auto py-3">
+                            <img 
+                            src="assets/imgs/navbar/221102_ParachuteHome_2023_Q1_4369.jpg" 
+                            alt="" 
+                            class="img-fluid">
+                            <a href="#" class="text-decoration-none text-black">
+                              <figure class="text-start">
+                                <blockquote class="blockquote">
+                                  <p>A well-known quote, contained in a blockquote element.</p>
+                                </blockquote>
+                                <figcaption class="blockquote-footer">
+                                  Someone famous in 
+                                  <cite title="Source Title">
+                                    Source Title
+                                  </cite>
+                                </figcaption>
+                              </figure>
+                            </a>
+                          </div>
+                        </div>                         
+                      </div>
+                    </li>
+                    <li class="nav-item mb-0 pb-0">
+                      <a 
+                      href="#furniture"
+                      type="button" 
+                      class="btn nav-btn" 
+                      data-bs-toggle="dropdown" 
+                      data-bs-target="furniture"
+                      aria-expanded="false" 
+                      data-bs-auto-close="outside"
+                      >
+                        furniture
+                      </a>
+                      <div 
+                      class="dropdown-menu m-0 border-0 bg-white h-auto px-5 py-0 w-100" 
+                      id="furniture"
+                      >
+                        <div class="row w-100 d-flex align-items-baseline justify-content-between">
+                          <div class="col-lg-auto m-auto mt-0 py-3 ps-1 bor-nav-list">
+                              <ul class="list-unstyled nav-list">
+                                <li class="list-unstyled">
+                                  <h6 class="text-uppercase p-2 ps-0">sheeting + top of bed</h6>
+                                  <ul class="list-unstyled list-group p-2 ps-0 me-5 border-0 fst-italic">
+                                    <li class="list-group-item p-2 ps-0 text-capitalize border-0"><a class="nav-link" href="">Sheets</a></li>
+                                    <li class="list-group-item p-2 ps-0 text-capitalize border-0"><a class="nav-link" href="">pillowcases + shams</a></li>
+                                    <li class="list-group-item p-2 ps-0 text-capitalize border-0"><a class="nav-link" href="">fitted Sheets</a></li>
+                                    <li class="list-group-item p-2 ps-0 text-capitalize border-0"><a class="nav-link" href="">top Sheets</a></li>
+                                    <li class="list-group-item p-2 ps-0 text-capitalize border-0"><a class="nav-link" href="">duvet covers</a></li>
+                                    <li class="list-group-item p-2 ps-0 text-capitalize border-0"><a class="nav-link" href="">quilts + blankets</a></li>
+                                    <li class="list-group-item p-2 ps-0 text-capitalize border-0"><a class="nav-link" href="">bedding swaches</a></li>
+                                  </ul>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="col-lg-4 m-auto py-3">
+                            <img 
+                            src="assets/imgs/navbar/221102_ParachuteHome_2023_Q1_2195.jpg" 
+                            alt="" 
+                            class="img-fluid">
+                            <a href="#" class="text-decoration-none text-black">
+                              <figure class="text-start">
+                                <blockquote class="blockquote">
+                                  <p>A well-known quote, contained in a blockquote element.</p>
+                                </blockquote>
+                                <figcaption class="blockquote-footer">
+                                  Someone famous in 
+                                  <cite title="Source Title">
+                                    Source Title
+                                  </cite>
+                                </figcaption>
+                              </figure>
+                            </a>
+                          </div>
+                        </div>                         
+                      </div>
+                    </li>
+                    <li class="nav-item mb-0 pb-0">
+                      <a 
+                      href="#decor"
+                      type="button" 
+                      class="btn nav-btn" 
+                      data-bs-toggle="dropdown" 
+                      data-bs-target="decor"
+                      aria-expanded="false" 
+                      data-bs-auto-close="outside"
+                      >
+                        decor + living
+                      </a>
+                      <div 
+                      class="dropdown-menu m-0 border-0 bg-white h-auto px-5 py-0 w-100" 
+                      id="decor"
+                      >
+                        <div class="row w-100 d-flex align-items-baseline justify-content-between">
+                          <div class="col-lg-auto m-auto mt-0 py-3 ps-1 bor-nav-list">
+                              <ul class="list-unstyled nav-list">
+                                <li class="list-unstyled">
+                                  <h6 class="text-uppercase p-2 ps-0">sheeting + top of bed</h6>
+                                  <ul class="list-unstyled list-group p-2 ps-0 me-5 border-0 fst-italic">
+                                    <li class="list-group-item p-2 ps-0 text-capitalize border-0"><a class="nav-link" href="">Sheets</a></li>
+                                    <li class="list-group-item p-2 ps-0 text-capitalize border-0"><a class="nav-link" href="">pillowcases + shams</a></li>
+                                    <li class="list-group-item p-2 ps-0 text-capitalize border-0"><a class="nav-link" href="">fitted Sheets</a></li>
+                                    <li class="list-group-item p-2 ps-0 text-capitalize border-0"><a class="nav-link" href="">top Sheets</a></li>
+                                    <li class="list-group-item p-2 ps-0 text-capitalize border-0"><a class="nav-link" href="">duvet covers</a></li>
+                                    <li class="list-group-item p-2 ps-0 text-capitalize border-0"><a class="nav-link" href="">quilts + blankets</a></li>
+                                    <li class="list-group-item p-2 ps-0 text-capitalize border-0"><a class="nav-link" href="">bedding swaches</a></li>
+                                  </ul>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="col-lg-4 m-auto py-3">
+                            <img 
+                            src="assets/imgs/navbar/221102_ParachuteHome_2023_Q1_1763__1_.jpg" 
+                            alt="" 
+                            class="img-fluid">
+                            <a href="#" class="text-decoration-none text-black">
+                              <figure class="text-start">
+                                <blockquote class="blockquote">
+                                  <p>A well-known quote, contained in a blockquote element.</p>
+                                </blockquote>
+                                <figcaption class="blockquote-footer">
+                                  Someone famous in 
+                                  <cite title="Source Title">
+                                    Source Title
+                                  </cite>
+                                </figcaption>
+                              </figure>
+                            </a>
+                          </div>
+                        </div>                         
+                      </div>
+                    </li>
+                    <li class="nav-item mb-0 pb-0">
+                      <a 
+                      href="#featured"
+                      type="button" 
+                      class="btn nav-btn" 
+                      data-bs-toggle="dropdown" 
+                      data-bs-target="featured"
+                      aria-expanded="false" 
+                      data-bs-auto-close="outside"
+                      >
+                        featured
+                      </a>
+                      <div 
+                      class="dropdown-menu m-0 border-0 bg-white h-auto px-5 py-0 w-100" 
+                      id="featured"
+                      >
+                        <div class="row w-100 d-flex align-items-baseline justify-content-between">
+                          <div class="col-lg-auto m-auto mt-0 py-3 ps-1 bor-nav-list">
+                              <ul class="list-unstyled nav-list">
+                                <li class="list-unstyled">
+                                  <h6 class="text-uppercase p-2 ps-0">sheeting + top of bed</h6>
+                                  <ul class="list-unstyled list-group p-2 ps-0 me-5 border-0 fst-italic">
+                                    <li class="list-group-item p-2 ps-0 text-capitalize border-0"><a class="nav-link" href="">Sheets</a></li>
+                                    <li class="list-group-item p-2 ps-0 text-capitalize border-0"><a class="nav-link" href="">pillowcases + shams</a></li>
+                                    <li class="list-group-item p-2 ps-0 text-capitalize border-0"><a class="nav-link" href="">fitted Sheets</a></li>
+                                    <li class="list-group-item p-2 ps-0 text-capitalize border-0"><a class="nav-link" href="">top Sheets</a></li>
+                                    <li class="list-group-item p-2 ps-0 text-capitalize border-0"><a class="nav-link" href="">duvet covers</a></li>
+                                    <li class="list-group-item p-2 ps-0 text-capitalize border-0"><a class="nav-link" href="">quilts + blankets</a></li>
+                                    <li class="list-group-item p-2 ps-0 text-capitalize border-0"><a class="nav-link" href="">bedding swaches</a></li>
+                                  </ul>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="col-lg-4 m-auto py-3">
+                            <img 
+                            src="assets/imgs/navbar/221102_ParachuteHome_2023_Q1_0489.jpg" 
+                            alt="" 
+                            class="img-fluid">
+                            <a href="#" class="text-decoration-none text-black">
+                              <figure class="text-start">
+                                <blockquote class="blockquote">
+                                  <p>A well-known quote, contained in a blockquote element.</p>
+                                </blockquote>
+                                <figcaption class="blockquote-footer">
+                                  Someone famous in 
+                                  <cite title="Source Title">
+                                    Source Title
+                                  </cite>
+                                </figcaption>
+                              </figure>
+                            </a>
+                          </div>
+                        </div>                         
+                      </div>
+                    </li>
+                    <li class="nav-item mb-0 pb-0">
+                      <a 
+                      href="#last"
+                      type="button" 
+                      class="btn nav-btn" 
+                      data-bs-toggle="dropdown" 
+                      data-bs-target="last"
+                      aria-expanded="false" 
+                      data-bs-auto-close="outside"
+                      >
+                        last chance
+                      </a>
+                      <div 
+                      class="dropdown-menu m-0 border-0 bg-white h-auto px-5 py-0 w-100" 
+                      id="last"
+                      >
+                        <div class="row w-100 d-flex align-items-baseline justify-content-between">
+                          <div class="col-lg-auto m-auto mt-0 py-3 ps-1 bor-nav-list">
+                              <ul class="list-unstyled nav-list">
+                                <li class="list-unstyled">
+                                  <h6 class="text-uppercase p-2 ps-0">sheeting + top of bed</h6>
+                                  <ul class="list-unstyled list-group p-2 ps-0 me-5 border-0 fst-italic">
+                                    <li class="list-group-item p-2 ps-0 text-capitalize border-0"><a class="nav-link" href="">Sheets</a></li>
+                                    <li class="list-group-item p-2 ps-0 text-capitalize border-0"><a class="nav-link" href="">pillowcases + shams</a></li>
+                                    <li class="list-group-item p-2 ps-0 text-capitalize border-0"><a class="nav-link" href="">fitted Sheets</a></li>
+                                    <li class="list-group-item p-2 ps-0 text-capitalize border-0"><a class="nav-link" href="">top Sheets</a></li>
+                                    <li class="list-group-item p-2 ps-0 text-capitalize border-0"><a class="nav-link" href="">duvet covers</a></li>
+                                    <li class="list-group-item p-2 ps-0 text-capitalize border-0"><a class="nav-link" href="">quilts + blankets</a></li>
+                                    <li class="list-group-item p-2 ps-0 text-capitalize border-0"><a class="nav-link" href="">bedding swaches</a></li>
+                                  </ul>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="col-lg-4 m-auto py-3">
+                            <img 
+                            src="assets/imgs/navbar/220719_JulyMini_2985__2_.jpg" 
+                            alt="" 
+                            class="img-fluid">
+                            <a href="#" class="text-decoration-none text-black">
+                              <figure class="text-start">
+                                <blockquote class="blockquote">
+                                  <p>A well-known quote, contained in a blockquote element.</p>
+                                </blockquote>
+                                <figcaption class="blockquote-footer">
+                                  Someone famous in 
+                                  <cite title="Source Title">
+                                    Source Title
+                                  </cite>
+                                </figcaption>
+                              </figure>
+                            </a>
+                          </div>
+                        </div>                         
+                      </div>
+                    </li>
+                    <li class="text-dark fs-4 w-100 d-lg-none"><hr></li>
+                    <li class="nav-item mb-0 pb-0">
+                      <div class="navbar-nav d-lg-none d-flex justify-content-end nav-links fs-6 ps-3">
+                        <a class="nav-link" href="#">About Us</a>
+                        <a class="nav-link" href="#">Sustainability</a>
+                        <a class="nav-link" href="#">Trade</a>
+                        <a class="nav-link" href="#">Design Services</a>
+                        <a class="nav-link" href="#">Stores</a>
+                        <a class="nav-link" href="#">Blog</a>
+                        <div class="d-flex flex-row justify-content-start align-items-center" width="50px" height="50px">
+                          <div class="p-0 m-0 round-img border-dark rounded-circle d-flex align-items-center text-center" width="50px" height="50px">
+                            <a href="" class="nav-link">
+                              <img src="assets/US.svg" alt="" class="img-fluid">
+                            </a>
+                          </div>
+                          <div class="d-flex text-center justify-content-center">US</div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="d-inline icons-bar">
+                <ul class="list-inline fs-6 d-flex justify-content-between align-items-center">
+                  <li class="list-inline-item d-none d-lg-inline-block">
+                    <a href="#" class="nav-link pt-2 mt-1 ms-auto d-none d-lg-block sign-icon" rel="search icon">
+                      Sign In
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                      <svg 
+                      class="nav-link pt-2 mt-1 ms-auto fav-icon" 
+                      viewBox="0 0 100 100" width="30" height="30">
+                        <path
+                          d="M 10,30
+                                  A 20,20 0,0,1 50,30
+                                  A 20,20 0,0,1 90,30
+                                  Q 90,60 50,90
+                                  Q 10,60 10,30 z"
+                          stroke="#000"
+                          stroke-width="5px"
+                          fill="#fff" 
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <i class="nav-link pt-2 mt-1 ms-auto bi bi-search" onclick="openNav()"></i>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#" class="nav-link pt-2 mt-1 ms-auto" rel="shop icon">
+                      <i class="bi bi-cart-dash"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <section class="p-5 m-5">
+    <div class="p-5 cart empty yourCart text-muted">
+      <h1>
+        your cart is empty
+      </h1>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque, dolor?
+      </p>
+      <div class="container">
+        <h6>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto, esse!
+        </h6>
+        <div class="row">
+          <div class="col">
+            <img src="assets/imgs/classic-turkish-cotton-towels_blush_lightbox_0194.jpg" alt="" class="img-fluid">
+          </div>
+          <div class="col">
+            <p class="d-flex flex-row">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, laudantium?
+            </p>
+            <button type="button" class="btn">
+              select + add to cart
+            </button>
+          </div>
+        </div>
+      </div>
+      <button class="btn">
+        shop now
+      </button>
+    </div>
+  </section>
+
+
+  <script 
+  src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" 
+  integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" 
+  crossorigin="anonymous"
+  >
+  </script>
+
+
+  <script 
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" 
+  integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" 
+  crossorigin="anonymous"
+  >
+  </script>
+
+
+  <script 
+  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" 
+  integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" 
+  crossorigin="anonymous" 
+  referrerpolicy="no-referrer"
+  >
+  </script>
+
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  
+  
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+  <script src="assets/slick.min.js"></script>
+
+  <script src="assets/index.js"></script>
+</body>
+</html>

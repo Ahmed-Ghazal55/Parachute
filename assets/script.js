@@ -2,30 +2,53 @@ $(document).ready(function(){
   var $overlayQuickView = $('.overlay-quick-view');
   var $closeViewBtn = $('#close-quickView');
   var $showViewBtn = $('.quickView');
-  var $headFilter = $('.head-filter');
   var $filterHeader = $('.filter-header');
+  // var $headFilter = $('.head-filter');
+  // var $filterHeadIcon = $('.filter-head-icon .bi');
 
   $showViewBtn.each(function () {
     $(this).on('click', function () {
-      if ($overlayQuickView.css("display", "none")) {
-        $overlayQuickView.css("display", "flex")
-      }
+      // if ($overlayQuickView.css("display", "none")) {
+      //   $overlayQuickView.css("display", "flex");
+      // }
+      $overlayQuickView.toggle();
+    })
+    $closeViewBtn.on('click', function(){
+      $overlayQuickView.toggle();
     })
   })
 
-  $closeViewBtn.on('click', function(){
-    if ($overlayQuickView.css("display", "flex")){
-      $overlayQuickView.css("display", "none");
-    }
-  })
-
-  $headFilter.each(function(){
+  $filterHeader.each(function(){
     $(this).on('click', function() {
-      $(this).find('.filter-list-container').toggle();
+      // $(this).find('.filter-list-container').toggle();
+      $(this).next().toggle('');
+      $(this).find('.filter-head-icon .bi-plus').hide('');
+      $(this).find('.filter-head-icon .bi-plus').show();
+      $(this).find('.filter-head-icon .bi-dash').show('');
+      $(this).find('.filter-head-icon .bi-dash').hide();
       }
     )
   })
+
+  $('.single-item').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: false,
+    arrows: true,
+    infinite: false,
+    // autoplay: true,
+    // autoplaySpeed: 4000
+  });
+
+  // window.on("click", function(){
+  //   if ($overlayQuickView.css("display", "flex")){
+  //     $overlayQuickView.css("display", "none");
+  //   }
+  // });
+  
 })
+
+
 
 function clickFilter() {
   let btnFilter = document.querySelector('#btn-filter-id');
@@ -79,13 +102,7 @@ $('.multiple-items').slick({
   ]
 });
 
-$('.single-item').slick({
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  dots: false,
-  arrows: true,
-  infinite:false
-});
+
 
 
 $('.featured').slick({

@@ -1,0 +1,24 @@
+/* cart style */
+.cart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    text-transform: capitalize;
+    font-size: 0.7em;
+    font-weight: 600;
+}
+.cart p {
+    font-size: 0.9rem;
+}
+.cart .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 2em;
+    background-color: #cfc7c2;
+    padding: 2%;
+    width: auto;
+}

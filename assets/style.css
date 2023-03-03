@@ -351,7 +351,7 @@
   text-align: center;
   padding: 0%;
   border: none;
-  background-color: #fff;
+  /* background-color: #fff; */
   border: 1px solid white;
   padding: 0.3%;
 }
@@ -359,12 +359,13 @@
   border: 1px solid #000;
   padding: 0.3%;
 }
-circle{
-  opacity: 70%
+.thems.active {
+  border: 1px solid #000;
+  padding: 0.3%;
 }
 circle:hover {
-  fill: #6d6d6d;
-  stroke-width: 2;
+  stroke-width: 10;
+  opacity: 80%;
 }
 .sec-color{
   background-color: #c8c8bc;
@@ -483,6 +484,9 @@ circle:hover {
   align-items: center;
   cursor: pointer;
   flex-wrap: wrap;
+}
+.head-filter .filter-header .dash-icon {
+  display: none;
 }
 .filter-container .filter-dropdown .dropdown-item .dropdown-item-text.btns-dropdown {
   display: none;
@@ -803,23 +807,24 @@ circle:hover {
 }
 
 .overlay-quick-view {
-  height: 100%;
-  width: 50vw;
   position: fixed;
   z-index: 12;
   top: 0;
   right: 0;
-  background-color: #ffe;
-  overflow-x: scroll;
-  transition: 0.5s;
+  height: 100%;
+  width: 40vw;
   display: none;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: start;
+  align-items: safe;
   text-align: start;
   padding: 2%;
   font-size: small;
+  background-color: #ffe;
+  overflow-y: scroll;
+  transition: 0.5s ease;
 }
-.bi-x-circle{
+.overlay-quick-view .bi-x-circle{
   position: absolute;
   top: 2%;
   right: 4%;
@@ -832,7 +837,13 @@ circle:hover {
   position: relative;
   left: 20%;
 }
+.single-img .single-img-con{
+  display: block;
+  position: relative;
+}
 .single-img .single-img-con img {
+  display: block;
+  position: relative;
   width: 100%;
   height: 100%;
   
@@ -865,17 +876,31 @@ circle:hover {
   font-size: large;
   padding: 4%;
 }
-.text-quick-view .btns-quick-ivew {
+.text-quick-view .btns-quick-ivew-size {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   gap: 2em;
 }
-.text-quick-view .btns-quick-ivew .btn {
+.text-quick-view .btns-quick-ivew-size .btn {
   width: 150px;
   border-radius: 0%;
 }
-.text-quick-view .btn-secondary {
+.overlay-quick-view .list-colors {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 2em;
+}
+.overlay-quick-view .list-colors li {
+  width: 100%;
+}
+.overlay-quick-view .list-colors .color {
+  display: flex;
+  gap: 2em;
+}
+.text-quick-view .btn-secondary.btn-addToCart {
   width: 100%;
   border-radius: 0;
   height: auto;
