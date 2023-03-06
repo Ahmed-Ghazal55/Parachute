@@ -7,8 +7,6 @@ $(document).ready(function(){
   // var $filterHeadIcon = $('.filter-head-icon .bi');
 
 
-  displayCart();
-
   $showViewBtn.each(function () {
     $(this).on('click', function () {
       $overlayQuickView.toggle();
@@ -102,7 +100,10 @@ $(document).ready(function(){
       },
     ]
   });
+
+  displayCart();
 });
+
 
 
 function clickFilter() {
@@ -165,7 +166,7 @@ document.querySelector(".product-overlay").innerHTML = categories.map((item)=>
 {
   var {imgs, name, size, price} = item;
   return(
-    `<i class="bi bi-x-circle close-quickView"></i>
+    `<i class="bi bi-x-circle close-quickView" onclick="closeOverlay()"></i>
       <div class="single-img single-item m-1 p-2">
         <div class="single-img-con">
           <img src="assets/imgs/${imgs[0]}" alt="">
@@ -240,6 +241,9 @@ function deletCart(a){
 
 function selectProduct(){
   document.querySelector('.overlay-quick-view.product-overlay').style.display = 'flex';
+}
+function closeOverlay(){
+  document.querySelector('.overlay-quick-view.product-overlay').style.display = 'none';
 }
 
 function displayCart(a){

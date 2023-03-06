@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link 
+    rel="stylesheet" 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link 
+    rel="stylesheet" 
+    href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    >
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/slick.css">
+    <link rel="stylesheet" href="assets/slick-theme.css">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/style-pages.css">
+    <title>Check Out</title>
+</head>
+<body>
+    <header class="p-5 header-check">
+        <div class="back-page col-2">
+            <a href="cart.html">
+                <button type="button" class="btn btn-primary position-relative">
+                    <i class="bi bi-cart"></i>
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill badge-pill">
+                      99+
+                      <span class="visually-hidden">unread messages</span>
+                    </span>
+                </button>
+                Back To Cart
+            </a>
+        </div>
+        <div class="logo col-10 text-center">
+            <a href="index.html" class="navbar-brand fs-2">parachute</a>
+        </div>
+    </header>
+    <section class="p-2">
+        <div class="row">
+            <div class="col-lg-8 col-sm-12 form-checkout">
+                <div class="btns">
+                    <a class="btn">
+                      express checkout
+                    </a>
+                </div>
+                <ol class="list-checkout">
+                    <li class="list-checkout-item">
+                        <p class="title">customer information</p>
+                        <ul class="list-unstyled item-checkout">
+                            <li class="checkout-item">
+                                <h6>have an account</h6>
+                                <span><sup>•</sup>Required</span>
+                            </li>
+                            <li class="checkout-item-input">
+                                <form class="form-floating">
+                                    <input type="email" class="form-control is-invalid" id="floatingInputInvalid" placeholder="name@example.com" value="test@example.com">
+                                    <label for="floatingInputInvalid">Invalid input</label>
+                                </form>
+                            </li>
+                            <li class="checkout-item-input">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                      Default checkbox
+                                    </label>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="list-checkout-item">
+                        <p class="title">shipping address</p>
+                        <ul class="list-unstyled item-checkout">
+                            <li class="checkout-item justify-content-end">
+                                <span><sup>•</sup>Required</span>
+                            </li>
+                            <li class="checkout-item-input">
+                                <form class="form-floating">
+                                    <input type="text" class="form-control is-invalid" id="floatingInputInvalid" placeholder="ADDRESS" value="">
+                                    <label for="floatingInputInvalid">ADDRESS</label>
+                                </form>
+                            </li>
+                            <li class="checkout-item-input">
+                                <form class="form-floating">
+                                    <input type="text" class="form-control is-invalid" id="floatingInputInvalid" placeholder="APARTMENT/SUITE/ETC" value="">
+                                    <label for="floatingInputInvalid">APARTMENT/SUITE/ETC</label>
+                                </form>
+                            </li>
+                            <li class="checkout-item-input">
+                                <form class="form-floating">
+                                    <input type="text" class="form-control is-invalid" id="floatingInputInvalid" placeholder="City" value="">
+                                    <label for="floatingInputInvalid">City</label>
+                                </form>
+                            </li>
+                            <li class="checkout-item-input">
+                                <div class="status row">
+                                    <div class="col-md-6">
+                                        <label for="inputState" class="form-label">Country/Region</label>
+                                        <select id="inputState" class="form-select">
+                                            <option selected>Choose...</option>
+                                            <option>...</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label for="inputState" class="form-label">State</label>
+                                        <select id="inputState" class="form-select">
+                                            <option selected>Choose...</option>
+                                            <option>...</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <label for="inputZip" class="form-label">Zip</label>
+                                        <input type="text" class="form-control" id="inputZip">
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="checkout-item-input">
+                                <form class="form-floating">
+                                    <input type="text" class="form-control is-invalid" id="floatingInputInvalid" placeholder="Phone Number" value="">
+                                    <label for="floatingInputInvalid">Phone Number</label>
+                                </form>
+                            </li>
+                            <li class="checkout-item-input">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                      Default checkbox
+                                    </label>
+                                </div>
+                            </li>
+                            <li class="checkout-item-input">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                      Default checkbox
+                                    </label>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+            <div class="col-lg-4 col-sm-12 pt-4">
+                <div class="row">
+                    <div class="col-12">
+                      <div class="summary">
+                        <h2>
+                          <p>summary</p>
+                        </h2>
+                        <h6>
+                          <p>subtotal</p>
+                          <p>$ 7</p>
+                        </h6>
+                        <h6>
+                          <p>shipping</p>
+                          <p>calculated at next step</p>
+                        </h6>
+                        <h6>
+                          <p>tax</p>
+                          <p>calculated at next step</p>
+                        </h6>
+                      </div>
+                      <div class="total">
+                        <p>total</p>
+                        <p>usd <strong>$ 7</strong></p>
+                      </div>
+                      <div class="btns">
+                        <a class="btn" href="checkout.html">
+                          checkout
+                        </a>
+                        <a class="btn">
+                          express checkout
+                        </a>
+                      </div>
+                      <div class="free text-capitalize p-2 bg-body-secondary">
+                        <h5 class="text-center p-2">
+                          Free Carbon Neutral Shipping + Returns
+                        </h5>
+                        <p class="text-start text-wrap">
+                          We're Climate Neutral certified, which means we offset our emissions on everything from product to shipping. Learn More
+                          <br>
+                          If you are unsatisfied with your purchase for any reason, we are happy to accept returns within 60 days (excludes final sale items).
+                          <br>
+                          White glove delivery fees, expedited and oversize shipping fees cannot be refunded.
+                          <br>
+                          Select furniture items are subject to restocking fees.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

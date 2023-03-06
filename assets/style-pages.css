@@ -83,3 +83,125 @@
 .micro-checkout .btns .btn:hover {
     border: 1.4px solid #000;
 }
+
+
+.favorites {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.favorites .card {
+    height: auto;
+}
+.favorites .card .card-img-top {
+    height: 45vh;
+}
+
+/* checkout style */
+
+.header-check {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.header-check a{
+    color: #000;
+    text-decoration: none;
+}
+.header-check a .btn-primary {
+    background-color: #f7f0f2;
+    color: #000;
+    border: none;
+}
+.header-check a .btn-primary .badge {
+    background-color: #000;
+    color: #ffffff;
+}
+
+.form-checkout .btns {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 3% 0%;
+}
+.form-checkout .btns .btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 98%;
+    margin: 2%;
+    border: 1px solid #969696;
+    background-color: #ffffff;
+    border-radius: 0%;
+    height: 9vh;
+    text-transform: capitalize;
+    color: #000;
+    font-size: large;
+}
+.form-checkout .btns .btn:hover {
+    border: 1.4px solid #000;
+    background-color: #d6d6d6;
+}
+.list-checkout{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-transform: capitalize;
+}
+.list-checkout-item {
+    width: 100%;
+}
+.list-checkout-item p.title {
+    width: 100%;
+    padding: 2%;
+    padding-left: 0%;
+    margin: 2%;
+    border-bottom: 1px solid #969696;
+}
+.list-checkout-item .item-checkout {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.list-checkout-item .item-checkout .checkout-item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin: 1%;
+    padding: 1%;
+}
+.list-checkout-item .item-checkout .checkout-item-input  {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin: 1%;
+    padding: 1%;
+}
+.list-checkout-item .item-checkout .checkout-item-input form {
+    width: 100%;
+    border: 1px solid #000;
+}
+.form-check-input {
+    width: 18px;
+    height: 18px;
+    border: 1px solid #000;
+}
+.list-checkout-item .item-checkout .checkout-item-input div.status {
+    width:  100%;
+    display: flex;
+    flex-direction: row;
+}
+.list-checkout-item .item-checkout .checkout-item-input div.status div input {
+    border-radius: 0%;
+    border: 1px solid #000;
+}
+.list-checkout-item .item-checkout .checkout-item-input div.status div select {
+    border-radius: 0%;
+    border: 1px solid #000;
+}

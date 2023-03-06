@@ -563,7 +563,7 @@ circle:hover {
 .all-bedding-cards .all-bedding-double-card {
   max-height: 90vh;
 }
-.all-bedding .card {
+.card {
   cursor: pointer;
   margin: 0.5%;
   padding: 0.5%;
@@ -571,17 +571,17 @@ circle:hover {
   background-color: #fff;
   max-height: 75vh;
 }
-.all-bedding .card .card-img-top {
+.card .card-img-top {
   border: none;
   background-color: #ffffe7;
 }
-.all-bedding .card .card-img-top {
+.card .card-img-top {
   height: 55vh;
 }
-.all-bedding .card .card-img-top img {
+.card .card-img-top img {
   object-fit: initial;
 }
-.all-bedding .card .card-img-top .img-btn-bottom {
+.card .card-img-top .img-btn-bottom {
   position: absolute;
   width: 96%;
   bottom: 2%;
@@ -595,7 +595,7 @@ circle:hover {
   opacity: 0;
   font-size: 1.2em;
 }
-.all-bedding .card .card-img-top:hover .img-btn-bottom {
+.card .card-img-top:hover .img-btn-bottom {
   opacity: 1;
   z-index: 1;
 }
