@@ -40,11 +40,12 @@
   };
   
   window.addEventListener('scroll', checkScroll);
+
 })();
 
 $(document).ready(function(){
   $('.responsive').slick({
-    dots: true,
+    dots: false,
     infinite: false,
     speed: 300,
     slidesToShow: 4,

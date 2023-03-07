@@ -3,9 +3,9 @@ $(document).ready(function(){
   var $closeViewBtn = $('#close-quickView');
   var $showViewBtn = $('.quickView');
   var $filterHeader = $('.filter-header');
+  var $numOfCart = $('.badge-pill')
   // var $headFilter = $('.head-filter');
   // var $filterHeadIcon = $('.filter-head-icon .bi');
-
 
   $showViewBtn.each(function () {
     $(this).on('click', function () {
@@ -102,6 +102,7 @@ $(document).ready(function(){
   });
 
   displayCart();
+
 });
 
 
@@ -156,6 +157,7 @@ const products = [
     price: 35,
   },
 ];
+
 
 const categories = [...new Set(products.map((item)=>
   {return item}))]
@@ -289,6 +291,7 @@ function displayCart(a){
         
     //   );
     // }).join('');
+    
 
     var total = 0
     cart.map((items)=>{
@@ -402,5 +405,7 @@ function displayCart(a){
         </div>
       </div>`
   }
-}
+};
+
+
 
